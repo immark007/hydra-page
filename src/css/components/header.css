@@ -1,0 +1,72 @@
+
+/*HEADER*/
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1430px;
+    margin-inline: auto;
+    padding-block: 2rem;
+}
+
+/*Logo*/
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-hydra{
+    width: 100%;
+    max-width: 70px;
+}
+
+.logo-text{
+    width: 100%;
+    max-width: 60px;
+}
+
+/*Navigation*/
+.header__navigation{
+    display: flex;
+}
+
+.navigation__ul{
+    display: flex;
+    list-style: none;
+    gap: 6rem;
+}
+
+.navigation__ul li a{
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*Buttons*/
+
+.header__buttons{
+    display: flex;
+    gap: 2rem;
+}
+.button-contatcs{
+    background: transparent;
+    color: var(--color-white);
+    border: 2.4px solid var(--color-white);
+    padding: 0.90rem 2.3rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-size: 0.76rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-join{
+    padding: 0.90rem 2.3rem;
+    border-radius: 2rem;
+    background: var(--linear-button);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}

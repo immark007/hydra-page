@@ -1,0 +1,16 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --background-color: #302D42;
+    --color-white: #FFFFFF;
+    --linear-button: linear-gradient(to right, #8176AF,#C0B7E8);
+}
+
+html, body{
+    font-family: "Montserrat", serif;
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+}
