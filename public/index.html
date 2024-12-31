@@ -1,38 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Hydra</title>
 </head>
-<body>
-    <header id="header">
-        <div class="header__logo">
-            <img class="logo-hydra" src="assets/logo-hydra.svg" alt="logo">
-            <img class="logo-text" src="assets/hydra-logo-text.svg" alt="logo-text">
-        </div>
-        <nav class="header__navigation">
-            <ul class="navigation__ul">
-                <li>
-                    <a href="#">about</a>
-                </li>
-                <li>
-                    <a href="#">services</a>
-                </li>
-                <li>
-                    <a href="#">tecnologies</a>
-                </li>
-                <li>
-                    <a href="#">how to</a>
-                </li>
-            </ul>
-        </nav>
 
-        <div class="header__buttons">
-            <button class="button-contatcs">contact us</button>
-            <button class="button-join">join hydra</button>
-        </div>
-    </header>
+<body>
+    <!--Cabeçalho-->
+    <div class="container background-image">
+        <header id="header">
+            <div class="header__logo">
+                <img class="logo-hydra" src="assets/logo-hydra.svg" alt="logo">
+                <img class="logo-text" src="assets/hydra-logo-text.svg" alt="logo-text">
+            </div>
+            <nav class="header__navigation">
+                <ul class="navigation__ul">
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                    <li>
+                        <a href="#">services</a>
+                    </li>
+                    <li>
+                        <a href="#">tecnologies</a>
+                    </li>
+                    <li>
+                        <a href="#">how to</a>
+                    </li>
+                </ul>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+
+            <div class="header__buttons">
+                <button class="button-contatcs">contact us</button>
+                <button class="button-join">join hydra</button>
+            </div>
+
+            <div class="header__mobile-menu">
+                <ul class="mobile__menu-ul">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">tecnologies</a></li>
+                    <li><a href="">how to</a></li>
+                </ul>
+                <div class="mobile-button">
+                    <button class="button-contatcs">contact us</button>
+                    <button class="button-join">join hydra</button>
+                </div>
+            </div>
+        </header>
+
+        <!--Main-->
+        <section id="dive">
+            <div class="dive__left">
+                <div class="dive__left-title">
+                    <h1 class="left-title"><span class="gradient-text">Dive</span> into The Depths of <span
+                            class="gradient-text">Virtual Reality</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        nisl tincidunt eget. Lectus mauris eros in vitae.</p>
+                </div>
+                <div class="left-button">
+                    <button class="button-left">
+                        <span>build your world</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="dive__right">
+                <img src="assets/main-img.png" alt="main">
+            </div>
+        </section>
+    </div>
+
+    <!-- Nova seção abaixo da div de background -->
+    <section id="new-section">
+        <h2>Nova Seção</h2>
+        <p>Conteúdo da nova seção vai aqui.</p>
+    </section>
+
+    <script src="../src/js/script.js"></script>
 </body>
+
 </html>

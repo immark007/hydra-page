@@ -1,43 +1,42 @@
-
 /*HEADER*/
-#header{
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1430px;
+    max-width: 1380px;
     margin-inline: auto;
     padding-block: 2rem;
 }
 
 /*Logo*/
-.header__logo{
+.header__logo {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.logo-hydra{
+.logo-hydra {
     width: 100%;
     max-width: 70px;
 }
 
-.logo-text{
+.logo-text {
     width: 100%;
     max-width: 60px;
 }
 
 /*Navigation*/
-.header__navigation{
+.header__navigation {
     display: flex;
 }
 
-.navigation__ul{
+.navigation__ul {
     display: flex;
     list-style: none;
     gap: 6rem;
 }
 
-.navigation__ul li a{
+.navigation__ul li a {
     color: var(--color-white);
     text-transform: uppercase;
     font-weight: 500;
@@ -45,11 +44,12 @@
 
 /*Buttons*/
 
-.header__buttons{
+.header__buttons {
     display: flex;
     gap: 2rem;
 }
-.button-contatcs{
+
+.button-contatcs {
     background: transparent;
     color: var(--color-white);
     border: 2.4px solid var(--color-white);
@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 
-.button-join{
+.button-join {
     padding: 0.90rem 2.3rem;
     border-radius: 2rem;
     background: var(--linear-button);
@@ -69,4 +69,105 @@
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+/*Responsividade*/
+.mobile-menu-icon {
+    display: none;
+}
+
+.header__mobile-menu {
+    display: none;
+}
+
+/*Telas maiores*/
+@media (width > 1900px) {
+    #header {
+        max-width: 1680px;
+    }
+}
+
+/*Celulares normais*/
+@media (width < 768px) {
+    #header {
+        padding-inline: 1rem;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .navigation__ul,
+    .header__buttons {
+        display: none;
+    }
+
+    #menu-icon {
+        font-size: 2rem;
+        background: linear-gradient(to right, #8176AF, #C0B7E8);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+
+    .header__mobile-menu {
+        position: fixed;
+        top: 0;
+        transition: left 0.3s ease-in-out;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background-color: var(--background-mobile-menu);
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        gap: 3rem;
+    }
+
+    .mobile__menu-ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 1rem;
+    }
+
+    .mobile__menu-ul li a {
+        color: var(--color-white);
+        text-transform: uppercase;
+        font-size: 0.78rem;
+        font-weight: 500;
+    }
+
+    .mobile-button {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .header__mobile-menu.open {
+        left: 0;
+    }
+}
+
+/*Celulares menores*/
+@media (width < 360px) {
+    .mobile-button {
+        padding-inline: 1rem;
+    }
+
+    .button-contatcs {
+        padding: 1rem 1rem;
+        font-size: 0.80rem;
+    }
+
+    .button-join {
+        padding: 1rem 1rem;
+        font-size: 0.80rem;
+    }
 }

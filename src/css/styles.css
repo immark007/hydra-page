@@ -3,3 +3,7 @@
 @import url('base/global.css');
 /*Components*/
 @import url('components/header.css');
+@import url('components/dive.css');
+
+/*Backgrounds*/
+@import url('components/background.css');

@@ -4,6 +4,7 @@
     --background-color: #302D42;
     --color-white: #FFFFFF;
     --linear-button: linear-gradient(to right, #8176AF,#C0B7E8);
+    --background-mobile-menu: #211E2E;
 }
 
 html, body{
@@ -13,4 +14,10 @@ html, body{
 
 a{
     text-decoration: none;
+}
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }

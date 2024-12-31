@@ -1,0 +1,151 @@
+#dive {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    margin-block: 4rem;
+}
+
+.dive__left,
+.dive__right {
+    flex: 1;
+    padding: 20px;
+}
+
+.dive__left {
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.dive__right {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.left-title {
+    font-size: 2.80rem;
+    max-width: 100%;
+    color: var(--color-white);
+}
+
+.dive__left-title {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dive__left-title p {
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 300;
+    max-width: 42ch;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #8176AF, #C0B7E8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.left-button {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.button-left {
+    display: flex;
+    align-items: center;
+    background: var(--linear-button);
+    padding: 1em 3em;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.button-left span {
+    transition: transform 0.3s ease;
+}
+
+.button-left i {
+    font-size: 2rem;
+    background: linear-gradient(to right, #8176AF, #C0B7E8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+    margin-left: 1rem;
+}
+
+.button-left:hover {
+    background: linear-gradient(to right, #C0B7E8, #8176AF);
+}
+
+.button-left:hover span {
+    transform: translateX(-10px);
+}
+
+.button-left:hover i {
+    transform: translateX(10px);
+}
+
+.dive__right img {
+    position: relative;
+    z-index: 3; 
+    max-width: 100%;
+    height: auto;
+    align-self: flex-end;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+/*Responsividade*/
+@media (min-width: 1900px) {
+    #dive {
+        max-width: 1680px;
+        padding: 0;
+        margin-block: 6rem;
+    }
+
+    .left-title {
+        font-size: 4.98rem;
+        max-width: 100%;
+        letter-spacing: -0.05em;
+    }
+}
+
+@media (width < 768px) {
+    #dive {
+        flex-direction: column;
+        margin-block: 1rem;
+    }
+
+    .dive__right {
+        order: 0;
+    }
+
+    .dive__left {
+        order: 1;
+        gap: 1.6rem;
+    }
+
+    .dive__left-title p{
+        display: none;
+    }
+
+    .left-title{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .left-button{
+        margin: 0 auto;
+    }
+}
